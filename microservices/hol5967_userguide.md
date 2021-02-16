@@ -109,7 +109,7 @@ Finally we have tied a chatbot(Skill) with the microservice-order as a front-en
 
 ![](./images/gigis-architect01.png)
 
-## **HOL to be done in 2 hours**
+## **HOL to be done in 3 or 4 hours**
 
 This HOL is a subset of the above mentioned demo. Due to time restrictions, we will focus in three main tasks for you to complete
 during the HOL delivery:
@@ -117,7 +117,7 @@ during the HOL delivery:
 1.  Setup an Oracle Cloud Infrastructure Free Trial instance where you can:
     
     1.  Provision a Developer Cloud Service(DevCS) Instance    
-    2.  Create a Kubernetes Clusters and setup access via ocicli and kubectl
+    2.  Create a Kubernetes Clusters and setup access via oci-cli and kubectl
 
 2.  Import a DevCS Gigi’s pizza project and configure it to deploy demo Microservices apps into the Kubernetes Cluster
 
