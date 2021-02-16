@@ -4,7 +4,7 @@
 
 <span class="underline">**Introduction**</span> - 3 -
 
-[**<span class="underline">HOL to be done in 2 hours.</span>** - 4
+[**<span class="underline">HOL to be done in 3 or 4 hours.</span>** - 4
 -](#hol-to-be-done-in-2-hours)
 
 [**<span class="underline">Setting up an Oracle Cloud Account</span>** -
