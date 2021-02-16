@@ -213,7 +213,7 @@ When you receive error like next:
 You must create several security policies in your tenant to use the Resource Principals. But you must create a Dinamyc Group first.
 
 ### Create a Dymanic Group
-First, you must to create a **Dynamic Group**. A Dynamic Group is a special group that contains OCI resources instead of regular users. More information about Dynamic Groups in the [Oracle Cloud SDK Documentation](https://docs.cloud.oracle.com/en-us/iaas/tools/oci-cli/2.14.0/oci_cli_docs/cmdref/iam/dynamic-group.html) and [OCI Documentation](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Tasks/managingdynamicgroups.htm)
+First, you must to create a **Dynamic Group**. A Dynamic Group is a special group that contains OCI resources instead of regular users. More information about Dynamic Groups in the [Oracle Cloud CLI Documentation](https://docs.oracle.com/en-us/iaas/tools/oci-cli/2.21.1/oci_cli_docs/cmdref/iam/dynamic-group.html) and [OCI Documentation](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Tasks/managingdynamicgroups.htm)
 
 Click on Main menu icon (hamburguer)->Identity->Dynamic Groups.
 
