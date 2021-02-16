@@ -369,7 +369,7 @@ This serverless function a private method [getAuthProvider] that create the auth
         return provider;
     }
 ```
-This serverless function has other private method [invokeCreateCampaingFunction] used to send the payload (camapaign) data to the next serverless function in the application. The method uses the endpoint and OCID destination function data to send it the campaign (in json format) that it was parsed previously from campaigns.json file. 
+This serverless function has other private method [invokeCreateCampaingFunction] used to send the payload (campaign) data to the next serverless function in the application. The method uses the endpoint and OCID destination function data to send it the campaign (in json format) that it was parsed previously from campaigns.json file. 
 ```java
 private String invokeCreateCampaingFunction (String invokeEndpointURL, String functionId, String payload) throws IOException {
 	String response                            = "";
