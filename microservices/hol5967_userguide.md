@@ -4,22 +4,33 @@
 
 * <span class="underline">**Introduction**</span> - 3 -
 * [**<span class="underline">HOL to be done in 3 or 4 hours.</span>** - 4-](#hol-to-be-done-in-2-hours)
-[**<span class="underline">Setting up an Oracle Cloud Account</span>** -4 -](#setting-up-an-oracle-cloud-account)
-[**<span class="underline">Getting key config data from Oracle Cloud Tenancy</span>** - 12 -](#getting-key-config-data-from-oracle-cloud-tenancy)
-[<span class="underline">How to get OCI tenancy config data to configure DevCS</span> - 12 -](#how-to-get-oci-tenancy-config-data-to-configure-devcs)
-[**<span class="underline">Configuring a Developer Cloud Service Instance</span>** - 19 -](#configuring-a-developer-cloud-service-instance)
-[<span class="underline">Virtual Machines Template configuration in DevCS</span> - 21 -](#virtual-machines-template-configuration-in-devcs)
-[<span class="underline">Build Virtual Machines configuration in DevCS</span> - 27 -](#build-virtual-machines-configuration-in-devcs)
+* [**<span class="underline">Setting up an Oracle Cloud Account</span>** -4 -](#setting-up-an-oracle-cloud-account)
+* [**<span class="underline">Getting key config data from Oracle Cloud Tenancy</span>** - 12 -](#getting-key-config-data-from-oracle-cloud-tenancy)
+* [<span class="underline">How to get OCI tenancy config data to configure DevCS</span> - 12 -](#how-to-get-oci-tenancy-config-data-to-configure-devcs)
+* [**<span class="underline">Configuring a Developer Cloud Service Instance</span>** - 19 -](#configuring-a-developer-cloud-service-instance)
+* [<span class="underline">Virtual Machines Template configuration in DevCS</span> - 21 -](#virtual-machines-template-configuration-in-devcs)
+* [<span class="underline">Build Virtual Machines configuration in DevCS</span> - 27 -](#build-virtual-machines-configuration-in-devcs)
+
 [**<span class="underline">Creating a Kubernetes Cluster</span>** - 31 -](#creating-a-kubernetes-cluster)
+
 [<span class="underline">Using Virtualbox and a preconfigured VM image</span> - 38 -](#using-virtualbox-and-a-preconfigured-vm-image)
+
 [<span class="underline">Using Docker and a preconfigured image</span> - 50 -](#using-docker-and-a-preconfigured-image)
+
 [**<span class="underline">Importing a Developer Cloud Service Project</span>** - 54 -](#importing-a-developer-cloud-service-project)
+
 [**<span class="underline">Configuring the Project to match our Kubernetes Cluster</span>** - 59 -](#configuring-the-project-to-match-our-kubernetes-cluster)
+
 [<span class="underline">Configuring Builds</span> - 62 -](#configuring-builds)
+
 [<span class="underline">Fn Function Jobs modification</span> - 62 -](#fn-function-jobs-modification)
+
 [<span class="underline">Docker Jobs modification</span> - 65 -](#docker-jobs-modification)
+
 [<span class="underline">OKE Jobs modification</span> - 69 -](#oke-jobs-modification)
+
 [<span class="underline">Configuring Git repositories</span> - 73 -](#configuring-git-repositories)
+
 [**<span class="underline">Testing my implementation</span>** - 83 -](#testing-my-implementation)
 [**<span class="underline">Modify the Project to match new feature</span>** - 85 -](#modify-the-project-to-match-new-feature)
 [**<span class="underline">The Cherry on the Cake: Digital Assistant User Interface</span>** - 92 -](#the-cherry-on-the-cake-digital-assistant-user-interface)
