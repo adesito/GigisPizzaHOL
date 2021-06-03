@@ -10,37 +10,26 @@
 * [**<span class="underline">Configuring a Developer Cloud Service Instance</span>** - 19 -](#configuring-a-developer-cloud-service-instance)
 * [<span class="underline">Virtual Machines Template configuration in DevCS</span> - 21 -](#virtual-machines-template-configuration-in-devcs)
 * [<span class="underline">Build Virtual Machines configuration in DevCS</span> - 27 -](#build-virtual-machines-configuration-in-devcs)
-
-[**<span class="underline">Creating a Kubernetes Cluster</span>** - 31 -](#creating-a-kubernetes-cluster)
-
-[<span class="underline">Using Virtualbox and a preconfigured VM image</span> - 38 -](#using-virtualbox-and-a-preconfigured-vm-image)
-
-[<span class="underline">Using Docker and a preconfigured image</span> - 50 -](#using-docker-and-a-preconfigured-image)
-
-[**<span class="underline">Importing a Developer Cloud Service Project</span>** - 54 -](#importing-a-developer-cloud-service-project)
-
-[**<span class="underline">Configuring the Project to match our Kubernetes Cluster</span>** - 59 -](#configuring-the-project-to-match-our-kubernetes-cluster)
-
-[<span class="underline">Configuring Builds</span> - 62 -](#configuring-builds)
-
-[<span class="underline">Fn Function Jobs modification</span> - 62 -](#fn-function-jobs-modification)
-
-[<span class="underline">Docker Jobs modification</span> - 65 -](#docker-jobs-modification)
-
-[<span class="underline">OKE Jobs modification</span> - 69 -](#oke-jobs-modification)
-
-[<span class="underline">Configuring Git repositories</span> - 73 -](#configuring-git-repositories)
-
-[**<span class="underline">Testing my implementation</span>** - 83 -](#testing-my-implementation)
-[**<span class="underline">Modify the Project to match new feature</span>** - 85 -](#modify-the-project-to-match-new-feature)
-[**<span class="underline">The Cherry on the Cake: Digital Assistant User Interface</span>** - 92 -](#the-cherry-on-the-cake-digital-assistant-user-interface)
-[**<span class="underline">Before You Begin</span>** - 92 -](#before-you-begin)
-[**<span class="underline">Background</span>** - 92 -](#background) 
-[**<span class="underline">What Do You Need?</span>** - 92 -](#what-do-you-need)
-[<span class="underline">Clone a Skill</span> - 93 -](#clone-a-skill)
-[<span class="underline">Create Intents</span> - 94 -](#create-intents)
-[<span class="underline">Modify the Dialog Flow</span> - 94 -](#modify-the-dialog-flow)
-[<span class="underline">Troubleshooting Errors in the Dialog Flow</span> - 98 -](#troubleshooting-errors-in-the-dialog-flow)
+* [**<span class="underline">Creating a Kubernetes Cluster</span>** - 31 -](#creating-a-kubernetes-cluster)
+* [<span class="underline">Using Virtualbox and a preconfigured VM image</span> - 38 -](#using-virtualbox-and-a-preconfigured-vm-image)
+* [<span class="underline">Using Docker and a preconfigured image</span> - 50 -](#using-docker-and-a-preconfigured-image)
+* [**<span class="underline">Importing a Developer Cloud Service Project</span>** - 54 -](#importing-a-developer-cloud-service-project)
+* [**<span class="underline">Configuring the Project to match our Kubernetes Cluster</span>** - 59 -](#configuring-the-project-to-match-our-kubernetes-cluster)
+* [<span class="underline">Configuring Builds</span> - 62 -](#configuring-builds)
+* [<span class="underline">Fn Function Jobs modification</span> - 62 -](#fn-function-jobs-modification)
+* [<span class="underline">Docker Jobs modification</span> - 65 -](#docker-jobs-modification)
+* [<span class="underline">OKE Jobs modification</span> - 69 -](#oke-jobs-modification)
+* [<span class="underline">Configuring Git repositories</span> - 73 -](#configuring-git-repositories)
+* [**<span class="underline">Testing my implementation</span>** - 83 -](#testing-my-implementation)
+* [**<span class="underline">Modify the Project to match new feature</span>** - 85 -](#modify-the-project-to-match-new-feature)
+* [**<span class="underline">The Cherry on the Cake: Digital Assistant User Interface</span>** - 92 -](#the-cherry-on-the-cake-digital-assistant-user-interface)
+* [**<span class="underline">Before You Begin</span>** - 92 -](#before-you-begin)
+* [**<span class="underline">Background</span>** - 92 -](#background) 
+* [**<span class="underline">What Do You Need?</span>** - 92 -](#what-do-you-need)
+* [<span class="underline">Clone a Skill</span> - 93 -](#clone-a-skill)
+* [<span class="underline">Create Intents</span> - 94 -](#create-intents)
+* [<span class="underline">Modify the Dialog Flow</span> - 94 -](#modify-the-dialog-flow)
+* [<span class="underline">Troubleshooting Errors in the Dialog Flow</span> - 98 -](#troubleshooting-errors-in-the-dialog-flow)
 
 ## **Introduction**
 
