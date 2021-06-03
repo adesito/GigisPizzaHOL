@@ -5,11 +5,11 @@ This HOL is based in a Demo developed by Spain Presales Tech Team as part of an 
 
 Demo is known as Gigi’s Pizza. This Use Case is focused in GitOps and LiquiBase. In Gigi's Pizza demo we have three microservices coded in different languages like nodejs and of course Java (Helidon framework). This three microservices are part of a delivery pizza app, one microservice controls the orders, other one controls the pizza delivery and the last one controls the accounting. 
 
-![](./images/gigis-architect01.png)
+![](./images/gigis-architect-original-2.png)
 
 In the first demo version, we don't have any feedback from the customer that receive a pizza, so imagine that the marketing and business areas want to know that feedback to improve the pizza delivery service or to create new pizza types. To create this new feedback service we have to modify the SQL DB PDB adding new tables in the squema and several fields in the tables. To create a DB squema version we will use LiquiBase, a software that let you create squema versions. We could return to a previous version of the Data Base after a failure or bad feeback of an app version (canary deployment for example) in an easy way with LiquiBase that is included with Oracle SQLPlus software.
 
-![](./images/gigis-architect02.png)
+![](./images/gigis-architect-polls.png)
 
 This GitOps Hands On Lab includes:
 
