@@ -600,9 +600,11 @@ In Template Section, select Import Project Option:
 
 ![](./images/image103.png)
 
-For Properties section, we will provide you with details to connect to a preconfigured DevCS instance from which you an import the project in this url:
+To fill the **Properties** section, we will provide you with details to connect to a preconfigured DevCS instance from which you can import the project in next url, and click on AccessBucket to get the information.
 
 https://github.com/oraclespainpresales/GigisPizzaHOL/tree/master/microservices/Credentials
+
+You could download the same project from github, as a zip file, in your own Oracle Object Storage Bucket and then import it from that bucket, in the same way but with your own credentials. If you want to use this second method, you must download the project zip file [here](https://github.com/oraclespainpresales/GigisPizzaHOL/raw/master/downloads/wedo-devops-gigis-vbcs-HOLzip).
 
 Click on Next:
 
