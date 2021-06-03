@@ -2,8 +2,8 @@
 
 [![](./images/image1.png)](https://www.oracle.com/code-one/)
 
-<span class="underline">**Introduction**</span> - 3 -
-[**<span class="underline">HOL to be done in 3 or 4 hours.</span>** - 4-](#hol-to-be-done-in-2-hours)
+* <span class="underline">**Introduction**</span> - 3 -
+* [**<span class="underline">HOL to be done in 3 or 4 hours.</span>** - 4-](#hol-to-be-done-in-2-hours)
 [**<span class="underline">Setting up an Oracle Cloud Account</span>** -4 -](#setting-up-an-oracle-cloud-account)
 [**<span class="underline">Getting key config data from Oracle Cloud Tenancy</span>** - 12 -](#getting-key-config-data-from-oracle-cloud-tenancy)
 [<span class="underline">How to get OCI tenancy config data to configure DevCS</span> - 12 -](#how-to-get-oci-tenancy-config-data-to-configure-devcs)
