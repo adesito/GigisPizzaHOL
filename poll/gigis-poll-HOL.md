@@ -21,6 +21,7 @@ This GitOps Hands On Lab includes:
   * Resource Manager (Terraform as a service)
   * DBCS
   * Serverless Functions
+  * API Gateway
 
 # In this Hands on Lab
 
