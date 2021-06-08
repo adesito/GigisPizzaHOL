@@ -20,6 +20,7 @@ This GitOps Hands On Lab includes:
   * Networking
   * Resource Manager (Terraform as a service)
   * DBCS
+  * Serverless Functions
 
 # In this Hands on Lab
 
