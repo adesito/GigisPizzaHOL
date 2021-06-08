@@ -32,8 +32,37 @@ You will:
 * Create a new feedback webpage with Oracle Visual Builder Studio.
 * Modify the current microservices to include the new Data.
 * Deploy webapp in a separate server (IaaS compute) instead of use the internal Visual Builder server to improve cost savings.
-* That deploy will be use terraform and sh scripts to automate it. 
-* All deployment files (terraform + sh + liquibase scripts) will be in a GIT repo (GitOps).
+* Terraform and sh scripts will be used to automate the deployment. 
+* All deployment files (terraform + sh + liquibase scripts) will be in a GIT repo (GitOps) in Visula Builder Studio.
 * Create the jobs and pipelines to deploy the app and modify the Data Base.
 * Create the jobs and pipelines to delete the app and return the Data Base to initial state.
+
+Let's create the new Service!
+
+# Visual Builder Import
+First Step to create the Gigi's Poll Service is to get the Visual Builder Studio project zip file from github and upload it to an Oracle Object Storage Bucket in your tenanty.
+
+Download the zip file from github [here](https://github.com/oraclespainpresales/GigisPizzaHOL/raw/master/downloads/wedo-devops-pollservice-demo.zip)
+Then upload it to an OSS Bucket in your tenancy. You can use a created OSS Bucket or create a new one. Next step will describe how to create a new OSS Bucket to upload the zip file.
+
+## Creating the OSS Bucket
+Go to Hamburguer Icon to open the Oracle Cloud Console menu. Select Storage and Buckets.
+
+Click Create Bucket button to create a new Bucket in your compartment (note: review your compartment name before create the new buacket, to create the bucket in the appropiate compartment).
+
+In the right window, change the name of the bucket to a descriptive one, for example [bucket-vbcs-poll]. Review the rest of the bucket features as default. Standard type and Encrypt using Oracle managed keys. Then click Create button to create the new Bucket.
+
+The new bucket must be shown in the buckets list. Click on it to access the bucket console menu and click Upload button to upload the zip file. 
+
+In the right console menu you must write a descriptive name like [vbcs-pollservice-project], and drag and drop the zip file in the dotted square or click on "select files" link to open a file browser to select the zip file. After the upload, the file name and size will be shown just below the dotted quare. Next click Upload to put the file in the OSS Bucket.
+
+A new "Finish" menssage in the name/size will be shown and ypu can click Close button to return to the bucket console menu.
+
+The new zip file should be in the Object list of the Bucket.
+
+Now you have the zip file prepared to be imported in the Visual Builder Studio new project.
+
+# Create the Visual Builder Project
+Next step to create the new poll service will be create and import a new visual builder project that will contain all required files. This import will create a new GIT repo in your Visual Builder Studio. So create a new project from the Visual Builder Studio main panel.
+
 
