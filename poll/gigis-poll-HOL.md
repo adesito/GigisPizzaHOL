@@ -109,4 +109,24 @@ Now you must fill the form with your own credentials (you can get this credentia
 - Your Compartment OCID, where the zip file was uploaded to the bucket.
 - Your Storage namespace.
 
+Then click **Next** button to continue.
+
+![](./images/vbcs-createproject-04.png)
+
+If all the values are correct then you can access your tenancy OSS and buckets. Select the bucket created in the First part of the demo and the zip file that you upload in there. Click **Finish** button to finish the project creation process. 
+
+![](./images/vbcs-createproject-05.png)
+
+Then you should see the creation project process task list. Wait for a while (about 5 or 6 minutes) to VBCS finish all the tasks.
+
+![](./images/vbcs-createproject-06.png)
+
+After creation completion, you should see the new Project Gigi's Poll Service home page.
+
+![](./images/vbcs-createproject-06.png)
+
+# Review the Project files
+
+
+
 
