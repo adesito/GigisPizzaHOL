@@ -117,13 +117,17 @@ If all values are correct then you can access your tenancy OSS and buckets. Sele
 
 ![](./images/vbcs-createproject-05.png)
 
-Then you should see the creation project process task list. Wait for a while (about 5 or 6 minutes) to VBCS finish all the tasks.
+Then you should see the creation project process task list. Wait for a while (about 3 or 4 minutes) to VBCS finish all the tasks.
 
 ![](./images/vbcs-createproject-06.png)
 
-After creation completion, you should see the new Project Gigi's Poll Service home page.
+After project creation completion, you should see the new Project Gigi's Poll Service home page.
 
 ![](./images/vbcs-createproject-07.png)
+
+The Process continue importing the zip file to the new project, so you should wait about 20 o 25 minutes (depending of the overload of the vbcs service) to complete all the importing task. In this process you get the GIT repos, the VBCS project, associated pipelines and so.
+
+![](./images/vbcs-createproject-08.png)
 
 # Review the Project files
 
