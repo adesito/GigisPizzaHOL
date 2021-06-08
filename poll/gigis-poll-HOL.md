@@ -61,7 +61,7 @@ A new "Finish" menssage in the name/size will be shown and ypu can click Close b
 
 The new zip file should be in the Object list of the Bucket.
 
-Now you have the zip file prepared to be imported in the Visual Builder Studio new project.
+Now you have the zip file prepared, to be imported in the Visual Builder Studio new project.
 
 # Create the Visual Builder Project
 Next step to create the new poll service will be create and import a new visual builder project that will contain all required files. This import will create a new GIT repo in your Visual Builder Studio. So create a new project from the Visual Builder Studio main panel.
