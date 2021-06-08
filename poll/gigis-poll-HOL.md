@@ -75,7 +75,7 @@ After the upload, the file name and size will be shown just below the dotted qua
 
 ![](./images/oci-ossbucket-create-07.png)
 
-A new "Finish" menssage in the name/size will be shown and ypu can click **Close** button to return to the bucket console menu.
+A new "Finish" menssage in the name/size will be shown and then you can click **Close** button to return to the bucket console menu.
 
 ![](./images/oci-ossbucket-create-08.png)
 
