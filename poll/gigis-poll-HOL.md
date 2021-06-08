@@ -98,7 +98,7 @@ Next select Import Project from the project type list and click **Next** to cont
 
 ![](./images/vbcs-createproject-03.png)
 
-Now you must fill the form with your own credentials (you can get this credential from the OCI console, if you don't remember how to get this values you can read this [example](https://github.com/oraclespainpresales/GigisPizzaHOL/blob/master/microservices/hol5967_userguide.md#how-to-get-oci-tenancy-config-data-to-configure-devcs)):
+Now you must fill the form with your own credentials (you can get this credential from the OCI console, if you don't remember how to get this values you can read this [example](https://github.com/oraclespainpresales/GigisPizzaHOL/blob/master/microservices/hol5967_userguide.md#getting-key-config-data-from-oracle-cloud-tenancy)):
 
 - Your Tenancy OCID.
 - Your User OCID.
