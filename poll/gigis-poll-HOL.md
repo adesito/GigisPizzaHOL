@@ -123,7 +123,7 @@ Then you should see the creation project process task list. Wait for a while (ab
 
 After creation completion, you should see the new Project Gigi's Poll Service home page.
 
-![](./images/vbcs-createproject-06.png)
+![](./images/vbcs-createproject-07.png)
 
 # Review the Project files
 
