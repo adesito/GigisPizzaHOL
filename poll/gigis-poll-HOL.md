@@ -113,7 +113,7 @@ Then click **Next** button to continue.
 
 ![](./images/vbcs-createproject-04.png)
 
-If all the values are correct then you can access your tenancy OSS and buckets. Select the bucket created in the First part of the demo and the zip file that you upload in there. Click **Finish** button to finish the project creation process. 
+If all values are correct then you can access your tenancy OSS and buckets. Select the bucket created in the First part of the demo and the zip file that you upload in there. Click **Finish** button to finish the project creation process. 
 
 ![](./images/vbcs-createproject-05.png)
 
