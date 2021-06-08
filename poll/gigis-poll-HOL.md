@@ -125,7 +125,7 @@ After project creation completion, you should see the new Project Gigi's Poll Se
 
 ![](./images/vbcs-createproject-07.png)
 
-The Process continue importing the zip file to the new project, so you should wait about 20 o 25 minutes (depending of the overload of the vbcs service) to complete all the importing task. In this process you get the GIT repos, the VBCS project, associated pipelines and so.
+The Process continue importing the zip file to the new project, so you should wait about 20 o 25 minutes (depending of the overload of the vbcs service) to complete all the importing task. In this process you will get the GIT repos with all files, the VBCS project (visual low code app), associated CI/CD pipelines and more.
 
 ![](./images/vbcs-createproject-08.png)
 
