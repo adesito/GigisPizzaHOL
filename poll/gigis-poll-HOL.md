@@ -86,6 +86,27 @@ The new zip file should be in the Object list of the Bucket.
 Now you have the zip file prepared, to be imported in the Visual Builder Studio new project.
 
 # Create the Visual Builder Project
-Next step to create the new poll service will be create and import a new visual builder project that will contain all required files. This import will create a new GIT repo in your Visual Builder Studio. So create a new project from the Visual Builder Studio main panel.
+Next step to create the new poll service will be create and import a new visual builder project that will contain all required files. This import will create a new GIT repo in your Visual Builder Studio. Let's start creating a new project from the Visual Builder Studio main panel -> Organization and click **Create** button.
+
+![](./images/vbcs-createproject-01.png)
+
+Then write an appropiate and descriptive project name like [**Gigis poll Service**] and a little description. Keep the Security as Private and Preferred Language English. Then click **Next** button.
+
+![](./images/vbcs-createproject-02.png)
+
+Next select Import Project from the project type list and click **Next** to continue with the creation process.
+
+![](./images/vbcs-createproject-03.png)
+
+Now you must fill the form with your own credentials (you can get this credential from the OCI console, if you don't remember how to get this values you can read this [example](https://github.com/oraclespainpresales/GigisPizzaHOL/blob/master/microservices/hol5967_userguide.md#how-to-get-oci-tenancy-config-data-to-configure-devcs)):
+
+- Your Tenancy OCID.
+- Your User OCID.
+- Home Region.
+- Your API Key Private key.
+- Your API Key passphrase for the private key if you use one (optional).
+- Your API Key Fingerprint.
+- Your Compartment OCID, where the zip file was uploaded to the bucket.
+- Your Storage namespace.
 
 
