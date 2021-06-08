@@ -49,17 +49,39 @@ Then upload it to an OSS Bucket in your tenancy. You can use a created OSS Bucke
 ## Creating the OSS Bucket
 Go to Hamburguer Icon to open the Oracle Cloud Console menu. Select Storage and Buckets.
 
-Click Create Bucket button to create a new Bucket in your compartment (note: review your compartment name before create the new buacket, to create the bucket in the appropiate compartment).
+![](./images/oci-ossbucket-create-01.png)
 
-In the right window, change the name of the bucket to a descriptive one, for example [bucket-vbcs-poll]. Review the rest of the bucket features as default. Standard type and Encrypt using Oracle managed keys. Then click Create button to create the new Bucket.
+Click **Create Bucket** button to create a new Bucket in your compartment (note: review your compartment name before create the new buacket, to create the bucket in the appropiate compartment).
 
-The new bucket must be shown in the buckets list. Click on it to access the bucket console menu and click Upload button to upload the zip file. 
+![](./images/oci-ossbucket-create-02.png)
 
-In the right console menu you must write a descriptive name like [vbcs-pollservice-project], and drag and drop the zip file in the dotted square or click on "select files" link to open a file browser to select the zip file. After the upload, the file name and size will be shown just below the dotted quare. Next click Upload to put the file in the OSS Bucket.
+In the right window, change the name of the bucket to a descriptive one, for example [**bucket-vbcs-poll**]. Review the rest of the bucket features as default. Standard type and Encrypt using Oracle managed keys. Then click Create button to create the new Bucket.
 
-A new "Finish" menssage in the name/size will be shown and ypu can click Close button to return to the bucket console menu.
+![](./images/oci-ossbucket-create-03.png)
+
+The new bucket must be shown in the buckets list.
+
+![](./images/oci-ossbucket-create-04.png)
+
+Click on it to access the bucket console menu and click **Upload** button to upload the zip file. 
+
+![](./images/oci-ossbucket-create-05.png)
+
+In the right console menu you must write a descriptive name like [**vbcs-pollservice-project**], and drag and drop the zip file in the dotted square or click on "select files" link to open a file browser to select the zip file. 
+
+![](./images/oci-ossbucket-create-06.png)
+
+After the upload, the file name and size will be shown just below the dotted quare. Next click **Upload** button to put the file in the OSS Bucket.
+
+![](./images/oci-ossbucket-create-07.png)
+
+A new "Finish" menssage in the name/size will be shown and ypu can click **Close** button to return to the bucket console menu.
+
+![](./images/oci-ossbucket-create-08.png)
 
 The new zip file should be in the Object list of the Bucket.
+
+![](./images/oci-ossbucket-create-09.png)
 
 Now you have the zip file prepared, to be imported in the Visual Builder Studio new project.
 
