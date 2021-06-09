@@ -161,7 +161,7 @@ Is the liquibase creation and destroy script controller. If you open it you coul
 
 ![](./images/vbcs-review-repos-03.png)
 
-### SQL cript Files
+### SQL script Files
 They are the sql scripts, to create/modify the current schema. The new poll functionality need a change in the SQL PDB schema to add the new coments and survey score.
 | File     | Description |
 |----------|-------------|
@@ -170,7 +170,7 @@ They are the sql scripts, to create/modify the current schema. The new poll func
 | script_tablepayment_survey.sql | modify fields in tables to add the survey score and comments. |
 | script_tablepayment_survey_rollback.sql | rollback script for script_tablepayment_survey. |
 
-You can open the different files to review it if you want.
+You can open the different files to review them if you want.
 
 ![](./images/vbcs-review-repos-04.png)
 
@@ -189,5 +189,30 @@ In this repo you should have al the GitOps part.
 | main.tf | Terraform script that is applyed by Resource Manager to create the infraestructure in OCI |
 | nopassphrase.key | private key to access to the created server and install several tools and vbcs webapp in the creation process.|
 
+You can open the different files to review them if you want.
 
+![](./images/vbcs-review-repos-06.png)
 
+## gigispoll_fn_getNewUUID repo
+In this repo you should have the nodejs serverless function code that create and asign a new UUID in the poll service to a customer.
+You can import this code into an IDE like visual studio core or similar to review or modify the nodejs code.
+
+![](./images/vbcs-review-repos-07.png)
+
+## gigispoll_fn_verifyUUID repo
+In this repo you should have the nodejs serverless function code that verify if an UUID was created for a user and if it is available to input a survey coment and score.
+You can import this code into an IDE like visual studio core or similar to review or modify the nodejs code.
+
+![](./images/vbcs-review-repos-08.png)
+
+## gigispoll_fn_getOrderData repo
+In this repo you should have the nodejs serverless function code that is going to select the order on which the survey is to be made.
+You can import this code into an IDE like visual studio core or similar to review or modify the nodejs code.
+
+![](./images/vbcs-review-repos-09.png)
+
+## gigispoll_fn_serOrderSurvey repo
+In this repo you should have the nodejs serverless function code that will insert the survey comment and score to the pizza order.
+You can import this code into an IDE like visual studio core or similar to review or modify the nodejs code.
+
+![](./images/vbcs-review-repos-10.png)
