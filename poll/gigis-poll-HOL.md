@@ -132,7 +132,53 @@ The Process continue importing the zip file to the new project, so you should wa
 ![](./images/vbcs-createproject-08.png)
 
 # Review the Project files
+After project creation and file zip import, you must have several GIT repos in your new project. 
 
+There are four related to the Serverless Functions (developed in nodejs):
+- gigispoll_fn_getNewUUID
+- gigispoll_fn_verifyUUID
+- gigispoll_fn_getOrderData
+- gigispoll_fn_setOrderSurvey
 
+And other 3 GIT repos related to Gitops, LiquiBase and VBCS app
+- liquibase
+- gigispoll_build
+- gigispoll_vbcs
 
+Select Git from the main menu to access to the GIT repos for review.
 
+![](./images/vbcs-review-repos-01.png)
+
+## liquibase git repo
+In this repo you should have all files related to the liquibase functionality. The sqlScript folder contain the necessary script files to create and destroy tables and fields in the Data Base.
+
+You must have 5 files, 4 sql files and a xml. 
+
+![](./images/vbcs-review-repos-02.png)
+
+### File controller_db_gigis.xml
+Is the liquibase creation and destroy script controller. If you open it you could see that there are several changesets with the sql script to create/modify tables and fields in the Data Base, and the appropiate rollback sql script to rollback the creation/modification sql scripts. If you want to know more about liquibase please visit the [liquibase.org](https://www.liquibase.org/) web page they have more examples.
+
+![](./images/vbcs-review-repos-03.png)
+
+### SQL cript Files
+They are the sql scripts, to create/modify the current schema. The new poll functionality need a change in the SQL PDB schema to add the new coments and survey score.
+| File     |     Description |
+|----------|:-------------:|
+| script_uuidtable.sql |  create a new table in the SQL PDB Schema to store the user UUIDs. |
+| script_uuidtable_rollback.sql |    rollback script of script_uuidtable.   |
+| script_tablepayment_survey.sql | modify fields in tables to add the survey score and comments. |
+| script_tablepayment_survey_rollback.sql | rollback script for script_tablepayment_survey. |
+
+You can open the different files to review it if you want.
+
+![](./images/vbcs-review-repos-04.png)
+
+## gigispoll_vbcs repo
+In this repo you should have the vbcs code of the survey web app. Is a vbcs project that ypu must use in the next steps in the HOL. 
+
+![](./images/vbcs-review-repos-05.png)
+
+## gigispoll_build repo
+In this repo you should have al the GitOps part. You must have:
+- build.sh
