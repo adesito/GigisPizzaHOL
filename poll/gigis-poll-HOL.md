@@ -163,8 +163,8 @@ Is the liquibase creation and destroy script controller. If you open it you coul
 
 ### SQL cript Files
 They are the sql scripts, to create/modify the current schema. The new poll functionality need a change in the SQL PDB schema to add the new coments and survey score.
-| File     |     Description |
-|----------|:-------------:|
+| File     | Description |
+|----------|-------------|
 | script_uuidtable.sql |  create a new table in the SQL PDB Schema to store the user UUIDs. |
 | script_uuidtable_rollback.sql |    rollback script of script_uuidtable.   |
 | script_tablepayment_survey.sql | modify fields in tables to add the survey score and comments. |
@@ -181,8 +181,8 @@ In this repo you should have the vbcs code of the survey web app. Is a vbcs proj
 
 ## gigispoll_build repo
 In this repo you should have al the GitOps part.
-| File     |     Description |
-|----------|:---------------:|
+| File     | Description |
+|----------|-------------|
 | build.sh | script file to create resources and install the webapp in OCI |
 | destroy.sh | script file to destroy resources created by build.sh |
 | gigispoll_rm.zip | zip file that contain the main.tf. It is used in the Resource Manager creation |
