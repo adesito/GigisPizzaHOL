@@ -180,5 +180,14 @@ In this repo you should have the vbcs code of the survey web app. Is a vbcs proj
 ![](./images/vbcs-review-repos-05.png)
 
 ## gigispoll_build repo
-In this repo you should have al the GitOps part. You must have:
-- build.sh
+In this repo you should have al the GitOps part.
+| File     |     Description |
+|----------|:---------------:|
+| build.sh | script file to create resources and install the webapp in OCI |
+| destroy.sh | script file to destroy resources created by build.sh |
+| gigispoll_rm.zip | zip file that contain the main.tf. It is used in the Resource Manager creation |
+| main.tf | Terraform script that is applyed by Resource Manager to create the infraestructure in OCI |
+| nopassphrase.key | private key to access to the created server and install several tools and vbcs webapp in the creation process.|
+
+
+
