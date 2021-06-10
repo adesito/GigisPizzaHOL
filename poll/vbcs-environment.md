@@ -55,7 +55,3 @@ Enter in the workspace Enterpoll > Flows > main > main-start that is the princip
 For review purposes, if you want to check the entire webpage, you must select Structure tab, then **Bind if** below the second Cell object (in the tree) and then in Temporary Override, check **True**. This process will put a temporary true value in the variables.ready variable allowing you to see all the web content. Now you could modify or design if you want your own poll web form.
 
 ![](./images/vbcs-creatingenvironments-10.png)
-
-Our HOL is out of creating or modifying the vbcs webapp, so lets return to the main vbcs menu clicking in the back arrow at the top of the workspace window.
-
-![](./images/vbcs-creatingenvironments-11.png)
