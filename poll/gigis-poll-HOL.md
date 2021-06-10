@@ -216,3 +216,22 @@ In this repo you should have the nodejs serverless function code that will inser
 You can import this code into an IDE like visual studio core or similar to review or modify the nodejs code.
 
 ![](./images/vbcs-review-repos-10.png)
+
+# Creating VBCS Environment & Workspace - poll webapp
+In this section you will create a new vbcs environment to deploy and run the vbcs poll webapp (VBCS runtime). After environment creation you will create a new workspace to enable the low code designer. A workspace connect you to the right Git repository, environment and, if required, sandbox. It’s the foundation for your apps.
+
+Clink on Envionments in the vbcs main menu. Then Click in **Create Environment** button.
+
+![](./images/vbcs-creatingenvironments-01.png)
+
+Enter an environment descriptive name and optionally a description. Then Click **Create** Button to start the creation process.
+
+![](./images/vbcs-creatingenvironments-02.png)
+
+Now you must add a new VBCS server instance in whitch vbcs workspace will be executed. Click **Add Instance**.
+
+![](./images/vbcs-creatingenvironments-03.png)
+
+You should see a list of vbcs instances that you are running in OCI. There are two options here, vbcs instances from OIC (Oracle Integration Cloud Service) or vbcs standalone instances. If you don't have any instances in your list, please you must create one. You can follow next [manual](https://docs.oracle.com/en/cloud/paas/visual-builder/visualbuilder-administration/set-oracle-visual-builder-studio.html#GUID-8EE9FC19-70A0-4508-A6B1-FB8425C13A91) to create a new VBCS instance.
+
+
