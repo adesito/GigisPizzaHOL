@@ -17,7 +17,7 @@ Now you must add a new VBCS server instance in whitch vbcs workspace will be exe
 
 You should see a list of vbcs instances that you are running in OCI. There are two options here, vbcs instances from OIC (Oracle Integration Cloud Service) or vbcs standalone instances. If you don't have any instances in your list, please you must create one. You can follow next [manual](https://docs.oracle.com/en/cloud/paas/visual-builder/visualbuilder-administration/set-oracle-visual-builder-studio.html#GUID-8EE9FC19-70A0-4508-A6B1-FB8425C13A91) to setup Visual Builder Studio and create a new VBCS instance.
 
-Select one instance, in our HOL you must create and select a standalone vbcs instance. Then click **Add* button.
+Select one instance, in our HOL you must create and select a standalone vbcs instance. Then click **Add** button.
 
 ![](./images/vbcs-creatingenvironments-04.png)
 
@@ -36,7 +36,6 @@ Now you can clik in **Workspaces** in the vbcs main menu. There are three option
 Click **Clone From Git**
 
 ![](./images/vbcs-creatingenvironments-06.png)
-
 Then write a name for the vbcs webapp workspace. 
 Then select the webapp git repo **[gigispoll_vbcs.git]**. 
 Branch as master.
