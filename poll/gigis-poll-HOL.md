@@ -282,51 +282,48 @@ Now you have to create next jobs in the next sections repeating last process.
  <summary> 2. DB_rollback_data_model_uuid_table Job</summary>
  
 ### DB_rollback_data_model_uuid_table Job
-This job will create the UUID table in you SQL PDB in the Gigi's multitenant DB (that you might created in the microservices HOL). This table will store the poll UUID for an order. To create the job, please click in **Create Job** green button.
+This job will destroy the UUID table in you SQL PDB in the Gigi's multitenant DB. To create the job, please click in **Create Job** button.
 
-![](./images/vbcs-create-jobs-03.png)
+![](./images/vbcs-create-jobs-13.png)
 
 Write a descriptive name like [**DB_apply_data_model_uuid_table**]. Optionally write a description for the job, and select a Build Machine Template. This machine template should have SQLcl package installed. You can get more information about how to create a build machine [here](https://github.com/oraclespainpresales/GigisPizzaHOL/blob/master/microservices/hol5967_userguide.md#virtual-machines-template-configuration-in-devcs). 
 Then click **Create** button to create the new Job.
 
-![](./images/vbcs-create-jobs-04.png)
+![](./images/vbcs-create-jobs-14.png)
 
 In the job main screen, you will configure the new job. First you will configure your GIT repo as source file storage. Click in the **Add Git** select button and select GIT.
 
-![](./images/vbcs-create-jobs-05.png)
+![](./images/vbcs-create-jobs-15.png)
 
 Select liquibase.git as you Git repo for this job from the selection list.
 
-![](./images/vbcs-create-jobs-06.png)
+![](./images/vbcs-create-jobs-16.png)
 
-You can check *Automatically perform build on SCM commit* to launch this job automatically when a change in the Git repo happen. But you can keep uncheck if you prefer to lauch the job or the pipeline by hand.
+Keep **UNCHECK** *Automatically perform build on SCM commit*, because if you check it and you perform a change in you GIT repo, it will try to delete the UUID table automatically.
+![](./images/vbcs-create-jobs-17.png)
 
-![](./images/vbcs-create-jobs-07.png)
+Next click *Parameters* Tab to create a VARIABLE Parameter. Click **Add Parameter** slect button and select *String Parameter* item.
 
-Next click in **Advance Git Settings** and scroll down to check *Clean after checkout* and *Wipe out workspace before checkout* marks.
+![](./images/vbcs-create-jobs-18.png)
+ 
+Next write a descriptive name for the number of rollbacks that you want to revert in the database for example [**NUMROLLCHANGES**]. And for this HOL the Default Value will be **2**. Optionally ypu could write a description for the Parameter.
+ 
+![](./images/vbcs-create-jobs-19.png)
 
-![](./images/vbcs-create-jobs-08.png)
+Select Steps Tab to add steps to your job. Next Click in the **Add Step** select button and then click in **SQLcl** item. This will add a new step into your job with a SQLcl task that you will configure in the next step.
 
-Scroll up again and Select Steps Tab to add steps to your job.
-
-![](./images/vbcs-create-jobs-09.png)
-
-Next Click in the **Add Step** select button and then click in **SQLcl** item. This will add a new step into your job with a SQLcl task that you will configure in the next step.
-
-![](./images/vbcs-create-jobs-10.png)
+![](./images/vbcs-create-jobs-20.png)
 
 Scroll down to show all the task fields and write you username, password and Connection String to access you SQL PDB. 
 Then Check *Inline SQL* and add next statement in the **SQL Statements**.
 ```liquibase
-lb update -changelog ./sqlScripts/controller_db_gigis.xml -log
+lb rollback -changelog ./sqlScripts/controller_db_gigis.xml -count $NUMROLLCHANGES
 ```
 Keep rest of the fields as **Default**
 
-![](./images/vbcs-create-jobs-11.png)
+![](./images/vbcs-create-jobs-21.png)
 
 Next, scroll up again and click **Save** button to save the entire job configuration. It would take several seconds, please be patient.
 
-![](./images/vbcs-create-jobs-12.png)
-
-Now you have to create next jobs in the next sections repeating last process.
+![](./images/vbcs-create-jobs-22.png)
 </details>
