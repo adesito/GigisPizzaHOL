@@ -223,7 +223,7 @@ In this section you will create 4 jobs and 2 pipelines to automate the applicati
 ![](./images/vbcs-create-jobs-01.png)
 
 ## Poll Jobs
-You must create 4 jobs that will be linked together (2 by 2) to create 2 pipelines that you will create in next steps.
+You must create 4 jobs that will be linked together (2 by 2) to create 2 pipelines.
 
 ![](./images/vbcs-create-jobs-02.png)
 <details>
