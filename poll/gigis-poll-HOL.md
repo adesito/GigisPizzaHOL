@@ -341,7 +341,8 @@ Then click **Create** button to create the new Job.
 
 ![](./images/vbcs-create-jobs-24.png)
 
-In the job main screen, you will configure the new job. First you will configure your GIT repo as source file storage. Click in the **Add Git** select button and select GIT.
+In the job main screen, you will configure the new job. You will create 2 GIT access in this job, one for the build git and other for the vbcs web app.
+First you will configure your GIT repo as source file storage. Click in the **Add Git** select button and select GIT.
 
 ![](./images/vbcs-create-jobs-25.png)
 
