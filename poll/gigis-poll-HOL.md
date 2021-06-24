@@ -230,6 +230,7 @@ You must create 4 jobs that will be linked together (2 by 2) to create 2 pipelin
 ![](./images/vbcs-create-jobs-02.png)
 <details>
  <summary> DB_apply_data_model_uuid_table Job</summary>
+ 
 ### DB_apply_data_model_uuid_table Job
 This job will create the UUID table in you SQL PDB in the Gigi's multitenant DB (that you might created in the microservices HOL). This table will store the poll UUID for an order. To create the job, please click in **Create Job** green button.
 
@@ -279,4 +280,5 @@ Next, scroll up again and click **Save** button to save the entire job configura
 
 Now you have to create next jobs in the next sections repeating last process.
 </details>
+
 ### DB_rollback_data_model_uuid_table Job
