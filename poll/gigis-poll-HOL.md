@@ -149,6 +149,9 @@ Select Git from the main menu to access to the GIT repos for review.
 
 ![](./images/vbcs-review-repos-01.png)
 
+<details>
+ <summary>liquibase git repo (click to show)</summary>
+ 
 ## liquibase git repo
 In this repo you should have all files related to the liquibase functionality. The sqlScript folder contain the necessary script files to create and destroy tables and fields in the Data Base.
 
@@ -173,7 +176,7 @@ They are the sql scripts, to create/modify the current schema. The new poll func
 You can open the different files to review them if you want.
 
 ![](./images/vbcs-review-repos-04.png)
-
+</details>
 ## gigispoll_vbcs repo
 In this repo you should have the vbcs code of the survey web app. Is a vbcs project that ypu must use in the next steps in the HOL. 
 
