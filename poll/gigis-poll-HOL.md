@@ -300,6 +300,7 @@ Select liquibase.git as you Git repo for this job from the selection list.
 ![](./images/vbcs-create-jobs-16.png)
 
 Keep **UNCHECK** *Automatically perform build on SCM commit*, because if you check it and you perform a change in you GIT repo, it will try to delete the UUID table automatically.
+ 
 ![](./images/vbcs-create-jobs-17.png)
 
 Next click *Parameters* Tab to create a VARIABLE Parameter. Click **Add Parameter** slect button and select *String Parameter* item.
