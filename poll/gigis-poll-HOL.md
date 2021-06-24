@@ -177,11 +177,17 @@ You can open the different files to review them if you want.
 
 ![](./images/vbcs-review-repos-04.png)
 </details>
+<details>
+ <summary>gigispoll_vbcs repo (click to show)</summary>
+ 
 ## gigispoll_vbcs repo
 In this repo you should have the vbcs code of the survey web app. Is a vbcs project that ypu must use in the next steps in the HOL. 
 
 ![](./images/vbcs-review-repos-05.png)
-
+</details>
+<details>
+ <summary>gigispoll_build repo (click to show)</summary>
+ 
 ## gigispoll_build repo
 In this repo you should have al the GitOps part.
 | File     | Description |
@@ -195,7 +201,10 @@ In this repo you should have al the GitOps part.
 You can open the different files to review them if you want.
 
 ![](./images/vbcs-review-repos-06.png)
-
+</details>
+<details>
+ <summary>gigispoll_fn_getNewUUID repo (click to show)</summary>
+ 
 ## gigispoll_fn_getNewUUID repo
 In this repo you should have the nodejs serverless function code that create and asign a new UUID in the poll service to a customer.
 You can import this code into an IDE like visual studio core or similar to review or modify the nodejs code.
@@ -207,18 +216,25 @@ In this repo you should have the nodejs serverless function code that verify if 
 You can import this code into an IDE like visual studio core or similar to review or modify the nodejs code.
 
 ![](./images/vbcs-review-repos-08.png)
-
+</details>
+<details>
+ <summary>gigispoll_fn_getOrderData repo (click to show)</summary>
+ 
 ## gigispoll_fn_getOrderData repo
 In this repo you should have the nodejs serverless function code that is going to select the order on which the survey is to be made.
 You can import this code into an IDE like visual studio core or similar to review or modify the nodejs code.
 
 ![](./images/vbcs-review-repos-09.png)
-
+</details>
+<details>
+ <summary>gigispoll_fn_serOrderSurvey repo (click to show)</summary>
+ 
 ## gigispoll_fn_serOrderSurvey repo
 In this repo you should have the nodejs serverless function code that will insert the survey comment and score to the pizza order.
 You can import this code into an IDE like visual studio core or similar to review or modify the nodejs code.
 
 ![](./images/vbcs-review-repos-10.png)
+</details>
 
 # CI/CD pipelines and jobs
 In this section you will create 4 jobs and 2 pipelines to automate the application deployment and the application destroy. Click in **Builds** icon in the main VBCS menu to get access to the jobs and pipelines tools.
