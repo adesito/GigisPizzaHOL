@@ -328,3 +328,73 @@ Next, scroll up again and click **Save** button to save the entire job configura
 
 ![](./images/vbcs-create-jobs-22.png)
 </details>
+<details>
+ <summary> 3. VBCS_Package_and_deploy_app Job</summary>
+ 
+### VBCS_Package_and_deploy_app Job
+This job will create the necessary cloud infrastructure to deploy the vbcs poll web application and deploy it on that infrastructure. It's a GitOps aproach as you will use a GIT repository as source of truth to create the cloud elements (infrastructure as a code) and deploy the web application. First step, as you did before, is to create the new job clicking in the **Create Job** button.
+
+![](./images/vbcs-create-jobs-23.png)
+
+Write a descriptive name like [**VBCS_Package_and_deploy_app**]. Optionally write a description for the job, and select a Build Machine Template. This machine template should have Nodejs 10, python and OciCli packages installed. You can get more information about how to create a build machine [here](https://github.com/oraclespainpresales/GigisPizzaHOL/blob/master/microservices/hol5967_userguide.md#virtual-machines-template-configuration-in-devcs). 
+Then click **Create** button to create the new Job.
+
+![](./images/vbcs-create-jobs-24.png)
+
+In the job main screen, you will configure the new job. First you will configure your GIT repo as source file storage. Click in the **Add Git** select button and select GIT.
+
+![](./images/vbcs-create-jobs-25.png)
+
+Select **gigispoll_vbcs.git** as you Git repo for this job from the selection list.
+
+![](./images/vbcs-create-jobs-26.png)
+
+You can check *Automatically perform build on SCM commit* to launch this job automatically when a change in the Git repo happen. But you can keep uncheck if you prefer to lauch the job or the pipeline by hand.
+ 
+![](./images/vbcs-create-jobs-27.png)
+ 
+Now you will configure your second GIT repo as source file storage. Click in the **Add Git** select button and select GIT. 
+
+![](./images/vbcs-create-jobs-28.png)
+ 
+Select **gigispoll_build.git** as you Git repo for this job from the selection list.
+ 
+![](./images/vbcs-create-jobs-29.png)
+
+You can check *Automatically perform build on SCM commit* to launch this job automatically when a change in the Git repo happen. But you can keep uncheck if you prefer to lauch the job or the pipeline by hand.
+ 
+![](./images/vbcs-create-jobs-30.png)
+
+Next click *Steps* Tab to create several task to create the infrastructure and deploy the web app. First click **Add Step** selection button and select *Visual Application* and *Pakage* Item.
+
+![](./images/vbcs-create-jobs-31.png)
+ 
+Check *Use custom file names* and keep the Sources and Build Artifact values.
+ 
+![](./images/vbcs-create-jobs-32.png)
+ 
+Nest let's create other task in the job. Click in **Add Step** Select button and select *OciCli* item.
+ 
+![](./images/vbcs-create-jobs-33.png)
+ 
+Write you OciCli credentials (you use them when import the VBCS project at the begining of the HOL).
+ 
+![](./images/vbcs-create-jobs-34.png)
+ 
+Now let's create the last task for this job. Click in **Add Step** Select button and select *Common Build Tools* and *Unix Shell* item.
+
+![](./images/vbcs-create-jobs-35.png)
+ 
+Next, write next shell script code in the **Script** field.
+```sh
+#!/bin/bash
+bash /tmp/build/build.sh
+exit 0
+```
+
+![](./images/vbcs-create-jobs-36.png)
+ 
+Next, scroll up again and click **Save** button to save the entire job configuration. It would take several seconds, please be patient.
+
+![](./images/vbcs-create-jobs-37.png)
+</details>
