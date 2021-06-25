@@ -477,6 +477,7 @@ In this section you will create 2 pipelines, one to create the cloud infrastruct
 <details>
  <summary>1. VBCS_with_liquibase pipeline</summary>
  
+ ### VBCS_with_liquibase pipeline
  This pipeline will use 2 jobs that you created before to automate the infrastructure creation, web app deployment and database changes.
  First click **Create Pipeline** button.
 
@@ -504,7 +505,7 @@ In this section you will create 2 pipelines, one to create the cloud infrastruct
  
 </details>
 <details>
- <summary>2. VBCS_Liquibase_rollback pipeline</summary>
+ <summary>###2. VBCS_Liquibase_rollback pipeline</summary>
  
  This pipeline will use 2 jobs that you created before, to automate the cleaning of the environment and database rollback.
  First click **Create Pipeline** button.
