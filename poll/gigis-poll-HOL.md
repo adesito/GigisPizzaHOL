@@ -505,8 +505,9 @@ In this section you will create 2 pipelines, one to create the cloud infrastruct
  
 </details>
 <details>
- <summary>###2. VBCS_Liquibase_rollback pipeline</summary>
+ <summary>2. VBCS_Liquibase_rollback pipeline</summary>
  
+ ###VBCS_Liquibase_rollback pipeline
  This pipeline will use 2 jobs that you created before, to automate the cleaning of the environment and database rollback.
  First click **Create Pipeline** button.
 
