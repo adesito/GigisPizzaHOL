@@ -455,7 +455,7 @@ Now let's create the last task for this job. Click in **Add Step** Select button
 
 ![](./images/vbcs-create-jobs-47.png)
  
-Next, write next shell script code in the **Script** field.
+Then, write next shell script code in the **Script** field.
 ```sh
 #!/bin/bash
 bash ./destroy.sh
