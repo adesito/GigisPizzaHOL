@@ -418,3 +418,53 @@ Next, scroll up again and click **Save** button to save the entire job configura
 
 ![](./images/vbcs-create-jobs-37.png)
 </details>
+<details>
+ <summary> 4. VBCS_destroy Job</summary>
+ 
+### VBCS_destroy Job
+This job will destroy the cloud infrastructure created to deploy the vbcs poll web application. It's a GitOps aproach as you will use a GIT repository as source of truth to create the cloud elements (infrastructure as a code) and deploy the web application. First step, as you did before, is to create the new job clicking in the **Create Job** button.
+
+![](./images/vbcs-create-jobs-40.png)
+
+Write a descriptive name like [**VBCS_destroy**]. Optionally write a description for the job, and select a Build Machine Template. This machine template should have Nodejs 10, python and OciCli packages installed. You can get more information about how to create a build machine [here](https://github.com/oraclespainpresales/GigisPizzaHOL/blob/master/microservices/hol5967_userguide.md#virtual-machines-template-configuration-in-devcs). 
+Then click **Create** button to create the new Job.
+
+![](./images/vbcs-create-jobs-41.png)
+
+In the job main screen, you will configure the new job. You will create one GIT access in this job. Click in the **Add Git** select button and select GIT.
+
+![](./images/vbcs-create-jobs-42.png)
+
+Select **gigispoll_build.git** as you Git repo for this job from the selection list.
+ 
+![](./images/vbcs-create-jobs-43.png)
+
+Keep **UNCHECK** *Automatically perform build on SCM commit*, because if you check it and you perform a change in you GIT repo, it will try to delete the UUID table automatically.
+ 
+![](./images/vbcs-create-jobs-44.png)
+
+Next click *Steps* Tab to create several task to create the infrastructure and deploy the web app. Click in **Add Step** Select button and select *OciCli* item.
+ 
+![](./images/vbcs-create-jobs-45.png)
+ 
+Write you OciCli credentials (you use them when import the VBCS project at the begining of the HOL).
+ 
+![](./images/vbcs-create-jobs-46.png)
+ 
+Now let's create the last task for this job. Click in **Add Step** Select button and select *Common Build Tools* and *Unix Shell* item.
+
+![](./images/vbcs-create-jobs-47.png)
+ 
+Next, write next shell script code in the **Script** field.
+```sh
+#!/bin/bash
+bash ./destroy.sh
+exit 0
+```
+
+![](./images/vbcs-create-jobs-48.png)
+ 
+Next, scroll up again and click **Save** button to save the entire job configuration. It would take several seconds, please be patient.
+
+![](./images/vbcs-create-jobs-49.png)
+</details>
