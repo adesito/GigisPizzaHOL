@@ -470,15 +470,64 @@ Next, scroll up again and click **Save** button to save the entire job configura
 </details>
 
 ## Pipelines
-In this section you will create 2 pipelines, one to create the cloud infrastructure from the Git files and after that deploy the webapp in that cloud resources. Then you will create the second pipeline, to destroy the cloud infrastructure created before and the web app, cleaning the environment.
+In this section you will create 2 pipelines, one to create the cloud infrastructure from the Git files and after that deploy the webapp in that cloud resources. Then you will create the second pipeline, to destroy the cloud infrastructure created before and the web app, cleaning the environment. Let's create the pipelines!
+
+![](./images/vbcs-create-pipelines-01.png)
 
 <details>
- <summary>1. VBCS_con_liquibase pipeline</summary>
+ <summary>1. VBCS_with_liquibase pipeline</summary>
+ 
+ This pipeline will use 2 jobs that you created before to automate the infrastructure creation, web app deployment and database changes.
+ First click **Create Pipeline** button.
+
+ ![](./images/vbcs-create-pipelines-02.png)
+ 
+ Write a descriptive name for the pipeline, sonething like [**VBCS_with_liquibase**]. You'll can change the pipeline name in the configuration pipeline menu. Keep *Auto start when pipeline jobs are built externally* checked if you want that the pipeline start running, after source files change in the git repo. For this HOL you have to check this item. Then click in **Create** button to get access to the pipeline editor.
+ 
+ ![](./images/vbcs-create-pipelines-03.png)
+ 
+ You might be in the pipeline editor and you might see a *Start* tag only in the editor. This is you start point in the workflow, that this pipeline will run when it will be triggered. Now drag and drop VBCS_Package_and_deploy_app and DB_apply_data_model_uuid_table jobs.
+ 
+ ![](./images/vbcs-create-pipelines-04.png)
+ 
+ Now you have to connect start point with the first job to run **VBCS_Package_and_deploy_app**. You have to click in the little circle in the start point and then drop in the white little circle at the job item.
+ 
+ ![](./images/vbcs-create-pipelines-05.png)
+ 
+ Next, connect job **VBCS_Package_and_deploy_app** to **DB_apply_data_model_uuid_table** jobs clicking in the first job blank circle and drop the line in the white little circle of the other job.
+ 
+  ![](./images/vbcs-create-pipelines-06.png)
+ 
+ Click **Save** button to save the pipeline and finish the process.
+ 
+  ![](./images/vbcs-create-pipelines-07.png)
  
 </details>
 <details>
- <summary>2. VBCS_Liquibase_rollback pipeline
-
-</summary>
+ <summary>2. VBCS_Liquibase_rollback pipeline</summary>
  
+ This pipeline will use 2 jobs that you created before, to automate the cleaning of the environment and database rollback.
+ First click **Create Pipeline** button.
+
+ ![](./images/vbcs-create-pipelines-08.png)
+ 
+ Write a descriptive name for the pipeline, sonething like [**VBCS_Liquibase_rollback**]. You'll can change the pipeline name in the configuration pipeline menu. Keep *Auto start when pipeline jobs are built externally* checked if you want that the pipeline start running, after source files change in the git repo. For this HOL you have to check this item. Then click in **Create** button to get access to the pipeline editor.
+ 
+ ![](./images/vbcs-create-pipelines-09.png)
+ 
+ You might be in the pipeline editor and you might see a *Start* tag only in the editor. This is you start point in the workflow, that this pipeline will run when it will be triggered. Now drag and drop VBCS_destroy and DB_rollback_data_model_uuid_table jobs.
+ 
+ ![](./images/vbcs-create-pipelines-10.png)
+ 
+ Now you have to connect start point with the first job to run **VBCS_destroy**. You have to click in the little circle in the start point and then drop in the white little circle at the job item.
+ 
+ ![](./images/vbcs-create-pipelines-11.png)
+ 
+ Next, connect job **VBCS_destroy** to **DB_rollback_data_model_uuid_table** jobs clicking in the first job blank circle and drop the line in the white little circle of the other job.
+ 
+  ![](./images/vbcs-create-pipelines-12.png)
+ 
+ Click **Save** button to save the pipeline and finish the process.
+ 
+  ![](./images/vbcs-create-pipelines-13.png)
 </details>
