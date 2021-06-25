@@ -468,3 +468,7 @@ Next, scroll up again and click **Save** button to save the entire job configura
 
 ![](./images/vbcs-create-jobs-49.png)
 </details>
+
+## Pipelines
+In this section you will create 2 pipelines, one to create the cloud infrastructure from the Git files and after that deploy the webapp in that cloud resources. The you will create the second pipeline to destroy the cloud infrastructure created before and the web app cleaning the environment.
+
