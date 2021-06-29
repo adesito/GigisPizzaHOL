@@ -533,3 +533,11 @@ In this section you will create 2 pipelines, one to create the cloud infrastruct
  
   ![](./images/vbcs-create-pipelines-13.png)
 </details>
+
+## Test the Poll app
+To test the pll webup you could change something in the code that are into de GIT repos to trigger the creation pipeline, but for the HOL and academic purposes it's better to launch the creation pipeline by hand. This HOL should be made after the microservices HOL as suggested in the requirements for the HOL at the beggining of this document, so be sure that you microservices gigi's pizza app is up and running.
+
+You could test the creation of the infrastructure and the Database changes even if the microservices app is not created, but you have to get the Database up and the squemas created as a minimum.
+
+### Review the SQL PDB Tables.
+You can use SQLcl or [SQL Developer](https://www.oracle.com/es/database/technologies/appdev/sqldeveloper-landing.html) to review that all tables are created in the SQL PDB.
