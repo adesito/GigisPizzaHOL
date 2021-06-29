@@ -53,9 +53,9 @@ Open your **SQLDeveloper app** and configure the SQL PDB connection with your cr
 <servername>.<sub-number>.<yourvcn>.oraclevcn.com:1521/<PDBNAME>.<sub-number>.<yourvnc>.oraclevcn.com
 ```
 You must use in SQLDeveloper:
-- Host name --> ** <servername>.<sub-number>.<yourvcn>.oraclevcn.com **
-- Service Name --> ** <PDBNAME>.<sub-number>.<yourvnc>.oraclevcn.com **
-- Port --> **1521**
+- servername.sub-number.yourvcn.oraclevcn.com as Host name
+- PDBNAME.sub-number.yourvnc.oraclevcn.com as Service name
+- 1521 as Port
 
 Then click in *Test* button to test the connection to the SQL PDB, and check the **Status** message (it should be *Correct*), if the status is **failed** then check your connection variables and try again. After connection status is **Correct**, click in **Connect** button to connect to the SQL PDB.
 
