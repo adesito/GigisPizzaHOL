@@ -540,7 +540,10 @@ To test the pll webup you could change something in the code that are into de GI
 You could test the creation of the infrastructure and the Database changes even if the microservices app is not created, but you have to get the Database up and the squemas created as a minimum.
 
 ### Review the SQL PDB Tables.
-You can use SQLcl or [SQL Developer](https://www.oracle.com/es/database/technologies/appdev/sqldeveloper-landing.html) to review that all tables are created in the SQL PDB. Now you can access to the OCI administration console and review the PDBs, connections string and more. 
+You can use SQLcl or [SQL Developer](https://www.oracle.com/es/database/technologies/appdev/sqldeveloper-landing.html) to review that all tables are created in the SQL PDB. 
+
+<details>
+ <summary> Now you can access to the OCI administration console and review the PDBs, connections string and more. </summary>
 
 First click in the OCI hamburger icon (top - left) 
 
@@ -573,4 +576,4 @@ Now you can select each PDB and get the connection string for example. To do tha
 You can copy the connection string clicking in the **copy** link.
 
 ![](./images/database-review-08.png)
-
+</details>
