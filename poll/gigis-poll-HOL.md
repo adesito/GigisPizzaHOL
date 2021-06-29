@@ -534,10 +534,13 @@ In this section you will create 2 pipelines, one to create the cloud infrastruct
   ![](./images/vbcs-create-pipelines-13.png)
 </details>
 
-## Test the Poll app
+# Test the Poll app
 To test the pll webup you could change something in the code that are into de GIT repos to trigger the creation pipeline, but for the HOL and academic purposes it's better to launch the creation pipeline by hand. This HOL should be made after the microservices HOL as suggested in the requirements for the HOL at the beggining of this document, so be sure that you microservices gigi's pizza app is up and running.
 
 You could test the creation of the infrastructure and the Database changes even if the microservices app is not created, but you have to get the Database up and the squemas created as a minimum.
+
+## Before the pipeline creation run.
+Let's check the Database tables/fields and the OCI infrastructure before the pipeline creation launch. Starting with the database you will see the tables and fields that you might have created in the SQL PDB of gigis pizza. The you will review the OCI infrastructure to see that nothing is created before the launcho of the pipeline that will create everything.
 
 ### Review the SQL PDB Tables.
 You can use SQLcl or [SQL Developer](https://www.oracle.com/es/database/technologies/appdev/sqldeveloper-landing.html) to review that all tables are created in the SQL PDB. 
@@ -577,3 +580,24 @@ You can copy the connection string clicking in the **copy** link.
 
 ![](./images/database-review-08.png)
 </details>
+
+In this HOL I will use *[SQL Developer](https://www.oracle.com/es/database/technologies/appdev/sqldeveloper-landing.html)* to show you what tables and fields are created before and after the pipeline trigger.
+
+#### Before pipeline are triggered.
+Open your **SQLDeveloper app** and configure the SQL PDB connection with your credentials and the connection string that you could get in the OCI console (as shown before). For example if your connection string is something like **<servername>.<sub-number>.<yourvcn>.oraclevcn.com:1521/<PDBNAME>.<sub-number>.<yourvnc>.oraclevcn.com**, you must use *<servername>.<sub-number>.<yourvcn>.oraclevcn.com* as **Host Name** and *<PDBNAME>.<sub-number>.<yourvnc>.oraclevcn.com* as **Service Name** in SQLDeveloper. Then click in *Test* button to test the connection to the SQL PDB, and check the **Status** message (it should be *Correct*), if the status is failed then review your connection variables. After connection status is correct, then click in **Connect** to connect to the SQL PDB.
+
+![](./images/database-review-10.png)
+ 
+Then review that you have the **PAYMENTS** table and next 7 fields:
+ - PAYMENTCODE
+ - ORDERID
+ - PAYMENTTIME
+ - PAYMENTMETHOD
+ - ORIGINALPRICE
+ - TOTALPAID
+ - CUSTOMERID
+ 
+ ![](./images/database-review-11.png)
+ 
+ 
+ 
