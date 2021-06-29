@@ -534,13 +534,13 @@ In this section you will create 2 pipelines, one to create the cloud infrastruct
   ![](./images/vbcs-create-pipelines-13.png)
 </details>
 
-# Test the Poll app
-To test the pll webup you could change something in the code that are into de GIT repos to trigger the creation pipeline, but for the HOL and academic purposes it's better to launch the creation pipeline by hand. This HOL should be made after the microservices HOL as suggested in the requirements for the HOL at the beggining of this document, so be sure that you microservices gigi's pizza app is up and running.
+# Testing the Poll app
+To test the poll webapp you could change something in the code that are into the GIT repos to trigger the creation pipeline, but for this HOL and academic purposes it's better to launch the creation pipeline by hand. This HOL should be made after the microservices HOL as suggested in the requirements for the HOL at the beggining of this document, so be sure that your microservices gigi's pizza app is up and running.
 
-You could test the creation of the infrastructure and the Database changes even if the microservices app is not created, but you have to get the Database up and the squemas created as a minimum.
+You could test the creation of the infrastructure and the Database changes even if the microservices app is not created, but you should have the Database up and the squemas created as a minimum.
 
-## Before the pipeline creation run.
-Let's check the Database tables/fields and the OCI infrastructure before the pipeline creation launch. Starting with the database you will see the tables and fields that you might have created in the SQL PDB of gigis pizza. The you will review the OCI infrastructure to see that nothing is created before the launcho of the pipeline that will create everything.
+## Before the pipeline creation launch.
+Let's check the Database tables/fields and the OCI infrastructure before the pipeline creation launch. Starting with the database you will see the tables and fields that you might have created in the SQL PDB of gigis pizza. Then you will review the OCI infrastructure to see that nothing was created before the launcho of the pipeline that will create everything.
 
 ### Review the SQL PDB Tables.
 You can use SQLcl or [SQL Developer](https://www.oracle.com/es/database/technologies/appdev/sqldeveloper-landing.html) to review that all tables are created in the SQL PDB. 
