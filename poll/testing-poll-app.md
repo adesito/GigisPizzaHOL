@@ -48,7 +48,15 @@ You can copy the connection string clicking in the **copy** link.
 In this HOL I will use *[SQL Developer](https://www.oracle.com/es/database/technologies/appdev/sqldeveloper-landing.html)* to show you what tables and fields are created before and after the pipeline trigger.
 
 #### Before pipeline are triggered.
-Open your **SQLDeveloper app** and configure the SQL PDB connection with your credentials and the connection string that you could get in the OCI console (as shown before). For example if your connection string is something like **<servername>.<sub-number>.<yourvcn>.oraclevcn.com:1521/<PDBNAME>.<sub-number>.<yourvnc>.oraclevcn.com**, you must use *<servername>.<sub-number>.<yourvcn>.oraclevcn.com* as **Host Name** and *<PDBNAME>.<sub-number>.<yourvnc>.oraclevcn.com* as **Service Name** in SQLDeveloper. Then click in *Test* button to test the connection to the SQL PDB, and check the **Status** message (it should be *Correct*), if the status is failed then review your connection variables. After connection status is correct, then click in **Connect** to connect to the SQL PDB.
+Open your **SQLDeveloper app** and configure the SQL PDB connection with your credentials and the connection string that you could get in the OCI console (as shown before). For example if your connection string is something like 
+```
+<servername>.<sub-number>.<yourvcn>.oraclevcn.com:1521/<PDBNAME>.<sub-number>.<yourvnc>.oraclevcn.com
+```
+You must use in SQLDeveloper:
+- *<servername>.<sub-number>.<yourvcn>.oraclevcn.com* as **Host Name** 
+- *<PDBNAME>.<sub-number>.<yourvnc>.oraclevcn.com* as **Service Name** 
+
+Then click in *Test* button to test the connection to the SQL PDB, and check the **Status** message (it should be *Correct*), if the status is **failed** then check your connection variables and try again. After connection status is **Correct**, click in **Connect** button to connect to the SQL PDB.
 
 ![](./images/database-review-10.png)
  
